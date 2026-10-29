@@ -38,3 +38,18 @@ Here is what happens under the hood in our `Containerfile`:
 
 * **`EXPOSE 8080`**
   * Opens a communication port. Since containers are isolated boxes by default, this creates a gateway allowing your web browser to access the website inside.
+
+### 3. Test your website
+
+#### Option A: If your machine has a GUI (Graphical User Interface)
+Open your web browser and navigate to:
+```text
+http://localhost:8080
+```
+
+#### Option B: If your machine has NO GUI (CLI only / Headless)
+You can use `curl` to test the HTTP response directly from your terminal:
+```bash
+curl http://localhost:8080
+```
+*(You should see the raw HTML code of the index page displayed in your console).*
